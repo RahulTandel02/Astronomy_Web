@@ -502,6 +502,17 @@ a:hover {
   color: #a93226;
 }
 
+footer .navbar-brand {
+  color: #a93226;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+footer .nav-link {
+  text-decoration: none;
+  color: #a93226;
+}
+
 .navbar-b.navbar-reduce .navbar-toggler span {
   background-color: #1b1b1b;
 }
@@ -1418,4 +1429,66 @@ div.desc {
 #more3,
 #more4 {
   display: none;
+}
+
+.contactForm {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+
+.inputs {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  /* font-size: ; */
+}
+
+.inputs input,
+textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 600;
+  background-color: #edf2f7;
+}
+
+/* .inputs input:focus {
+
+} */
+
+.inputs label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.inputs input:focus,
+.inputs input:focus {
+  border-bottom-color: #ac3a2e;
+}
+
+.inputs input:focus ~ label,
+.inputs input:valid ~ label {
+  transform: translateY(-23px);
+  color: #ac3a2e;
+}
+
+.inputs textarea {
+  /* height: 200px; */
+}
+
+.inputs textarea:focus ~ label,
+.inputs textarea:valid ~ label {
+  color: #ac3a2e;
+  transform: translateY(-23px);
 }
